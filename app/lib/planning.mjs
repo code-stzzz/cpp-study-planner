@@ -17,8 +17,10 @@ export function normalizeConditions(raw,library){
  for(const s of ['winter','summer']){
   if(![10,20,30].includes(c[s+'Days']))fail('集训天数应为10、20或30天');
   if(c[s]!=='none'){
-   if(!validDate(c[s+'Date'])||c[s+'Date']<c.start||addDays(c[s+'Date'],9)>c.end)fail('拟定首营的10天日期应完整位于规划周期内');
-   if(!(s==='winter'&&c[s]==='auto')&&!library.camps.some(x=>x.code===c[s]&&x.season===s))fail('集训课程与季节不匹配');
+   const camp=library.camps.find(x=>x.code===c[s]&&x.season===s),duration=camp?.days||10;
+   if(!(s==='winter'&&c[s]==='auto')&&!camp)fail('集训课程与季节不匹配');
+   if(c[s+'Days']<duration)fail(`${camp.code}为${duration}天大纲，可参加天数不能少于${duration}天`);
+   if(!validDate(c[s+'Date'])||c[s+'Date']<c.start||addDays(c[s+'Date'],duration-1)>c.end)fail(`拟定集训的${duration}天日期应完整位于规划周期内`);
   }
  }
  return c;
@@ -55,9 +57,9 @@ export function buildBaseline(student,cls,conditions,library,excludedExams=[],lo
  for(const season of ['winter','summer']){
   const code=season==='winter'&&c.winter==='auto'?rec.code:c[season];if(c[season]==='none')continue;
   if(!code){warnings.push(rec.reason);continue}const camp=library.camps.find(x=>x.code===code);if(!camp){warnings.push(`${code}资料未录入`);continue}
-  const start=c[season+'Date'],end=addDays(start,9),overlap=calendar.filter(l=>l.date>=start&&l.date<=end);
+  const duration=camp.days||10,start=c[season+'Date'],end=addDays(start,duration-1),overlap=calendar.filter(l=>l.date>=start&&l.date<=end);
   rows.push({id:season,start,end,task:`参加${code} ${camp.name}`,knowledge:camp.topic,milestone:`${c[season+'Status']==='已确定参加'?'已确定参加':'拟安排，参加情况待确认'}；完成集训阶段任务并记录表现；入营条件须老师核对`,kind:'camp',sourceIds:[`camp:${code}`],campStatus:c[season+'Status'],edited:false});
-  if(c[season+'Days']>10)warnings.push(`${code}已排首营10天，其余${c[season+'Days']-10}天的同季组合尚未配置`);
+  if(c[season+'Days']>duration)warnings.push(`${code}已排首营${duration}天，其余${c[season+'Days']-duration}天的同季组合尚未配置`);
   if(overlap.length)warnings.push(`${code}与${overlap.length}次常规课同日，需协调具体时段，常规课保留`);
   if(!camp.reviewed)warnings.push(`${code}大纲与入营条件待老师核对`);
  }

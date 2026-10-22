@@ -1,0 +1,419 @@
+{
+  "schema_version": 2,
+  "code": "NOIP",
+  "source_code": "NOIP",
+  "name": "算法强化班",
+  "season": "summer",
+  "season_basis": "用户本次明确作为暑假训练营提供",
+  "duration_days": 20,
+  "teaching_days": 18,
+  "rest_days": [
+    7,
+    14
+  ],
+  "year": null,
+  "edition": null,
+  "start_date": null,
+  "end_date": null,
+  "collection": {
+    "date": "2026-10-22",
+    "version": "summer-2026-10-22",
+    "status": "transcribed",
+    "method": "按用户提供的原图逐日逐时段读取转录",
+    "teacher_review_status": "not_recorded"
+  },
+  "audience_verbatim": "已熟练掌握提高组算法，了解部分NOIP阶段算法，需要进一步强化代码能力的选手",
+  "objectives_verbatim": "专题选讲与大量模拟赛结合，提升学员代码运用能力，目标NOIP一等高分",
+  "source_requirements": {
+    "age_requirement_verbatim": null,
+    "prior_knowledge_verbatim": "已熟练掌握提高组算法，了解部分NOIP阶段算法",
+    "scope": "仅记录原图招生描述，不等同于官方竞赛报名规则；不据此自动认定学生适合入营"
+  },
+  "schedule": [
+    {
+      "day": 1,
+      "topic_verbatim": "基础算法专题",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "基础算法专题"
+        },
+        {
+          "period": "下午",
+          "format": "基础算法专题"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "topic_verbatim": "模拟赛1",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "模拟赛1"
+        },
+        {
+          "period": "下午",
+          "format": "试题与拓展题目讲解"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "topic_verbatim": "数据结构#1",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "数据结构#1"
+        },
+        {
+          "period": "下午",
+          "format": "数据结构#1"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "topic_verbatim": "模拟赛2",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "模拟赛2"
+        },
+        {
+          "period": "下午",
+          "format": "试题与拓展题目讲解"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "topic_verbatim": "数据结构#2",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "数据结构#2"
+        },
+        {
+          "period": "下午",
+          "format": "数据结构#2"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "topic_verbatim": "模拟赛3",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "模拟赛3"
+        },
+        {
+          "period": "下午",
+          "format": "试题与拓展题目讲解"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "topic_verbatim": "休息",
+      "day_type": "rest",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "休息"
+        },
+        {
+          "period": "下午",
+          "format": "休息"
+        },
+        {
+          "period": "晚上",
+          "format": "休息"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "topic_verbatim": "组合计数",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "组合计数"
+        },
+        {
+          "period": "下午",
+          "format": "组合计数"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "topic_verbatim": "模拟赛4",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "模拟赛4"
+        },
+        {
+          "period": "下午",
+          "format": "试题与拓展题目讲解"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "topic_verbatim": "动态规划#1",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "动态规划#1"
+        },
+        {
+          "period": "下午",
+          "format": "动态规划#1"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "topic_verbatim": "模拟赛5",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "模拟赛5"
+        },
+        {
+          "period": "下午",
+          "format": "试题与拓展题目讲解"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "topic_verbatim": "动态规划#2",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "动态规划#2"
+        },
+        {
+          "period": "下午",
+          "format": "动态规划#2"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "topic_verbatim": "模拟赛6",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "模拟赛6"
+        },
+        {
+          "period": "下午",
+          "format": "试题与拓展题目讲解"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "topic_verbatim": "休息",
+      "day_type": "rest",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "休息"
+        },
+        {
+          "period": "下午",
+          "format": "休息"
+        },
+        {
+          "period": "晚上",
+          "format": "休息"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "topic_verbatim": "图论#1",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "图论#1"
+        },
+        {
+          "period": "下午",
+          "format": "图论#1"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "topic_verbatim": "模拟赛7",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "模拟赛7"
+        },
+        {
+          "period": "下午",
+          "format": "试题与拓展题目讲解"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "topic_verbatim": "图论#2",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "图论#2"
+        },
+        {
+          "period": "下午",
+          "format": "图论#2"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "topic_verbatim": "模拟赛8",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "模拟赛8"
+        },
+        {
+          "period": "下午",
+          "format": "试题与拓展题目讲解"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "topic_verbatim": "数论与字符串",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "数论与字符串"
+        },
+        {
+          "period": "下午",
+          "format": "数论与字符串"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "topic_verbatim": "模拟赛9",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "模拟赛9"
+        },
+        {
+          "period": "下午",
+          "format": "试题与拓展题目讲解"
+        },
+        {
+          "period": "晚上",
+          "format": "练习与答疑"
+        }
+      ]
+    }
+  ],
+  "schedule_notes": [
+    "20天大纲包含第7、14天休息，共18个有课程安排的日程日；不压缩休息日。",
+    "原图未标注每个时段时长，不换算为常规课课次。"
+  ],
+  "notes": [
+    "课程目标中的奖项表述为原图目标，不是成绩承诺。"
+  ],
+  "source": {
+    "original_path": "C:/Users/du140/AppData/Local/Temp/codex-clipboard-f66a9a49-221b-4d85-ad0d-2d8940927107.png",
+    "archived_path": "data/camps/summer/sources/NOIP-2026-10-22.png",
+    "format": "PNG",
+    "width": 800,
+    "height": 3390,
+    "sha256": "85305d1d6ddee5dc2f96d572f50a6185711726f4272c8adc09c28b48a3eaf2be"
+  },
+  "exam_mapping_status": "new_topics_not_automatically_mapped",
+  "prerequisite_mapping_status": "teacher_review_required",
+  "missing_information": [
+    "所属年份与适用版本",
+    "实际开营日期",
+    "各时段授课时长",
+    "与常规课及考纲的经确认对应关系"
+  ]
+}

@@ -41,7 +41,8 @@ export function coverageAt(level,cutoff,student,progress,calendar,campRows,libra
   if((student.attended||[]).includes(camp.code))for(const d of camp.schedule||[])put(`camp:${camp.code}:${d.day}`);
   for(const row of campRows.filter(r=>(r.sourceIds||[]).includes('camp:'+camp.code)))for(const d of camp.schedule||[]){
    const date=new Date(row.start+'T12:00:00Z');date.setUTCDate(date.getUTCDate()+d.day-1);
-   if(date.toISOString().slice(0,10)<cutoff)put(`camp:${camp.code}:${d.day}`,row.campStatus!=='已确定参加');
+   const day=date.toISOString().slice(0,10);
+   if(day<cutoff&&day<=row.end&&d.day_type!=='rest')put(`camp:${camp.code}:${d.day}`,row.campStatus!=='已确定参加');
   }
  }
  const valid=id=>{

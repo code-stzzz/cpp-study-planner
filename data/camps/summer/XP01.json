@@ -1,28 +1,30 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "code": "XP01",
   "source_code": "XP01",
   "name": "语法筑基班",
   "season": "summer",
   "season_basis": "用户确认：XP开头的是夏季暑假训练营",
   "duration_days": 10,
+  "teaching_days": 10,
+  "rest_days": [],
   "year": null,
   "edition": null,
   "start_date": null,
   "end_date": null,
   "collection": {
-    "date": "2026-10-21",
-    "status": "collected",
-    "method": "原图人工读取转录",
+    "date": "2026-10-22",
+    "version": "summer-2026-10-22",
+    "status": "transcribed",
+    "method": "按用户提供的原图逐日逐时段读取转录",
     "teacher_review_status": "not_recorded"
   },
-  "audience_verbatim": "12周岁及以上，C++编程零基础或基础薄弱的学生。目标是在暑假期间系统、高效地完成语法入门。",
+  "audience_verbatim": "12周岁及以上，C++语法学习中或基础薄弱的学生。目标是在暑假期间系统、高效地完成语法入门。",
   "objectives_verbatim": "系统学习初级算法，掌握基本的数据结构应用。",
   "source_requirements": {
-    "minimum_age_years": 12,
-    "prior_knowledge_verbatim": "C++编程零基础或基础薄弱",
-    "student_goal_verbatim": "在暑假期间系统、高效地完成语法入门",
-    "scope": "仅记录该营图片中的招生描述，不等同于官方竞赛报名条件"
+    "age_requirement_verbatim": "12周岁及以上",
+    "prior_knowledge_verbatim": "C++语法学习中或基础薄弱",
+    "scope": "仅记录原图招生描述，不等同于官方竞赛报名规则；不据此自动认定学生适合入营"
   },
   "schedule": [
     {
@@ -201,26 +203,27 @@
   "schedule_notes": [
     "第1—9天列出上午、下午、晚上三个时段；未标注每个时段时长。",
     "第10天只列上午讲解课，下午和晚上未列出安排，不作补充。",
-    "大纲内的复习计入10天，不额外追加复习日。"
+    "复习已经包含在大纲内，不额外追加复习日。"
   ],
   "notes": [
-    "课程目标按图片原文保留；未据此扩展每日课程范围。"
+    "本次原图学生群体为“C++语法学习中或基础薄弱”，与此前归档版本的“编程零基础”表述不同，以本次图为新资料依据。",
+    "课程目标原文提到初级算法和数据结构，不据此补入每日大纲未列出的内容。",
+    "课程目标中的奖项表述为原图目标，不是成绩承诺。"
   ],
   "source": {
-    "original_path": "C:/Users/du140/AppData/Roaming/DingTalk/ddc63c6e7119d5807948_v3/ImageFiles/cspace_170907227_212833149609_XP01大纲.jpg_e34a928abe371d7f92cb6b4af76b9e7e",
-    "archived_path": "data/camps/summer/sources/XP01.jpg",
-    "format": "JPEG",
+    "original_path": "C:/Users/du140/AppData/Local/Temp/codex-clipboard-f4a16d6e-8f3d-4735-b210-63d51bca1f59.png",
+    "archived_path": "data/camps/summer/sources/XP01-2026-10-22.png",
+    "format": "PNG",
     "width": 800,
     "height": 2883,
-    "sha256": "0c2661cc39ee010534b47c6f6fc3a303bcd261e37f9674fdbb3ddab8ff2181bf"
+    "sha256": "fb6099f4006807f66f0e87c9987ec1c05b7510c16b5196d1c21381740a6dfa14"
   },
-  "exam_mapping_status": "not_started",
-  "prerequisite_mapping_status": "not_started",
+  "exam_mapping_status": "new_topics_not_automatically_mapped",
+  "prerequisite_mapping_status": "teacher_review_required",
   "missing_information": [
-    "所属年份与版本",
+    "所属年份与适用版本",
     "实际开营日期",
     "各时段授课时长",
-    "与常规课、考纲的经确认对应关系"
+    "与常规课及考纲的经确认对应关系"
   ]
 }
-

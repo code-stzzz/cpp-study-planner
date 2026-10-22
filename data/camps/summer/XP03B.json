@@ -1,28 +1,30 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "code": "XP03B",
   "source_code": "XP03-B",
   "name": "J组冲刺班",
   "season": "summer",
   "season_basis": "用户确认：XP开头的是夏季暑假训练营",
   "duration_days": 10,
+  "teaching_days": 10,
+  "rest_days": [],
   "year": null,
   "edition": null,
   "start_date": null,
   "end_date": null,
   "collection": {
-    "date": "2026-10-21",
-    "status": "collected",
-    "method": "原图人工读取转录",
+    "date": "2026-10-22",
+    "version": "summer-2026-10-22",
+    "status": "transcribed",
+    "method": "按用户提供的原图逐日逐时段读取转录",
     "teacher_review_status": "not_recorded"
   },
   "audience_verbatim": "12周岁及以上，已经学习完CSP-J入门组阶段的算法，目标在CSP-J组复赛获得一等奖",
   "objectives_verbatim": "巩固CSP-J组中的复赛高频高点，进行复赛真题及模拟题的训练",
   "source_requirements": {
-    "minimum_age_years": 12,
+    "age_requirement_verbatim": "12周岁及以上",
     "prior_knowledge_verbatim": "已经学习完CSP-J入门组阶段的算法",
-    "student_goal_verbatim": "在CSP-J组复赛获得一等奖",
-    "scope": "仅记录该营图片中的招生描述，不等同于官方竞赛报名条件"
+    "scope": "仅记录原图招生描述，不等同于官方竞赛报名规则；不据此自动认定学生适合入营"
   },
   "schedule": [
     {
@@ -201,28 +203,26 @@
   "schedule_notes": [
     "第1—9天列出上午、下午、晚上三个时段；未标注每个时段时长。",
     "第10天只列上午讲解课，下午和晚上未列出安排，不作补充。",
-    "大纲内的复习计入10天，不额外追加复习日。"
+    "复习已经包含在大纲内，不额外追加复习日。"
   ],
   "notes": [
-    "课程目标中的“高频高点”按原图文字保留。",
-    "图片只写“搜索训练”“动态规划”等主题，未细分搜索算法或动态规划模型。",
-    "“复赛获得一等奖”是原图描述的学生目标，不是成绩承诺。"
+    "“复赛高频高点”按原图保留，不擅自改写。",
+    "课程目标中的奖项表述为原图目标，不是成绩承诺。"
   ],
   "source": {
-    "original_path": "C:/Users/du140/AppData/Roaming/DingTalk/ddc63c6e7119d5807948_v3/ImageFiles/cspace_170907227_212833149613_XP03B大纲.jpg_9cd0781af15b43e7c9d559e2683a6d4e",
-    "archived_path": "data/camps/summer/sources/XP03B.jpg",
-    "format": "JPEG",
+    "original_path": "C:/Users/du140/AppData/Local/Temp/codex-clipboard-454310e3-ef5f-4499-8aa9-0d15278a38c6.png",
+    "archived_path": "data/camps/summer/sources/XP03B-2026-10-22.png",
+    "format": "PNG",
     "width": 800,
     "height": 2883,
-    "sha256": "d9bbe216c0b373aa4e8bfb62e1eaca738df999607e8f097e3b049cebe6f15c1c"
+    "sha256": "de1378fca30518df204e8461721a1b7fbaaca87211a8702ceb525875de9e61eb"
   },
-  "exam_mapping_status": "not_started",
-  "prerequisite_mapping_status": "not_started",
+  "exam_mapping_status": "new_topics_not_automatically_mapped",
+  "prerequisite_mapping_status": "teacher_review_required",
   "missing_information": [
-    "所属年份与版本",
+    "所属年份与适用版本",
     "实际开营日期",
     "各时段授课时长",
-    "与常规课、考纲的经确认对应关系"
+    "与常规课及考纲的经确认对应关系"
   ]
 }
-

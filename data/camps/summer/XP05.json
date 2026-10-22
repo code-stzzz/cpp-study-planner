@@ -1,0 +1,227 @@
+{
+  "schema_version": 2,
+  "code": "XP05",
+  "source_code": "XP05",
+  "name": "S组算法强化班",
+  "season": "summer",
+  "season_basis": "用户确认：XP开头的是夏季暑假训练营",
+  "duration_days": 10,
+  "teaching_days": 10,
+  "rest_days": [],
+  "year": null,
+  "edition": null,
+  "start_date": null,
+  "end_date": null,
+  "collection": {
+    "date": "2026-10-22",
+    "version": "summer-2026-10-22",
+    "status": "transcribed",
+    "method": "按用户提供的原图逐日逐时段读取转录",
+    "teacher_review_status": "not_recorded"
+  },
+  "audience_verbatim": "12周岁以上学生，已熟练掌握C++提高组阶段算法，强化应试能力与算法运用能力",
+  "objectives_verbatim": "深入学习高级数据结构与复杂算法，冲击CSP-S一等奖",
+  "source_requirements": {
+    "age_requirement_verbatim": "12周岁以上",
+    "prior_knowledge_verbatim": "已熟练掌握C++提高组阶段算法",
+    "scope": "仅记录原图招生描述，不等同于官方竞赛报名规则；不据此自动认定学生适合入营"
+  },
+  "schedule": [
+    {
+      "day": 1,
+      "topic_verbatim": "算法综合精讲（一）",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "讲解课"
+        },
+        {
+          "period": "下午",
+          "format": "模拟赛"
+        },
+        {
+          "period": "晚上",
+          "format": "讲解课"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "topic_verbatim": "算法综合精讲（二）",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "讲解课"
+        },
+        {
+          "period": "下午",
+          "format": "模拟赛"
+        },
+        {
+          "period": "晚上",
+          "format": "讲解课"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "topic_verbatim": "S组真题选讲（一）",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "讲解课"
+        },
+        {
+          "period": "下午",
+          "format": "讲解 + 模拟赛"
+        },
+        {
+          "period": "晚上",
+          "format": "讲解课"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "topic_verbatim": "S组真题选讲（二）",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "讲解课"
+        },
+        {
+          "period": "下午",
+          "format": "讲解 + 模拟赛"
+        },
+        {
+          "period": "晚上",
+          "format": "讲解课"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "topic_verbatim": "S组复赛模拟训练（一）",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "讲解课"
+        },
+        {
+          "period": "下午",
+          "format": "讲解 + 模拟赛"
+        },
+        {
+          "period": "晚上",
+          "format": "讲解课"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "topic_verbatim": "S组复赛模拟训练（二）",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "讲解课"
+        },
+        {
+          "period": "下午",
+          "format": "模拟赛"
+        },
+        {
+          "period": "晚上",
+          "format": "讲解课"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "topic_verbatim": "S组复赛模拟训练（三）",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "讲解课"
+        },
+        {
+          "period": "下午",
+          "format": "模拟赛"
+        },
+        {
+          "period": "晚上",
+          "format": "讲解课"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "topic_verbatim": "综合复习",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "讲解课"
+        },
+        {
+          "period": "下午",
+          "format": "复习课"
+        },
+        {
+          "period": "晚上",
+          "format": "复习课"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "topic_verbatim": "S组复赛模拟训练（四）",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "讲解课"
+        },
+        {
+          "period": "下午",
+          "format": "模拟赛"
+        },
+        {
+          "period": "晚上",
+          "format": "讲解课"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "topic_verbatim": "提高组复赛技巧整合复习",
+      "sessions": [
+        {
+          "period": "上午",
+          "format": "讲解课"
+        }
+      ]
+    }
+  ],
+  "schedule_notes": [
+    "第1—9天列出上午、下午、晚上三个时段；未标注每个时段时长。",
+    "第10天只列上午讲解课，下午和晚上未列出安排，不作补充。",
+    "复习已经包含在大纲内，不额外追加复习日。"
+  ],
+  "notes": [
+    "课程目标中的奖项表述为原图目标，不是成绩承诺。"
+  ],
+  "source": {
+    "original_path": "C:/Users/du140/AppData/Local/Temp/codex-clipboard-fb652438-b012-46b7-b767-13a7f67e82a2.png",
+    "archived_path": "data/camps/summer/sources/XP05-2026-10-22.png",
+    "format": "PNG",
+    "width": 800,
+    "height": 2883,
+    "sha256": "69b50fe7a800a2d83722f53f9e3be9ae3e61b117b71f904f79352fa4d37db8b2"
+  },
+  "exam_mapping_status": "new_topics_not_automatically_mapped",
+  "prerequisite_mapping_status": "teacher_review_required",
+  "missing_information": [
+    "所属年份与适用版本",
+    "实际开营日期",
+    "各时段授课时长",
+    "与常规课及考纲的经确认对应关系"
+  ]
+}

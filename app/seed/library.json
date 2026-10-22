@@ -1346,8 +1346,8 @@
       "season": "summer",
       "days": 10,
       "topic": "初识C++、分支结构、循环、数组、字符与字符串、循环嵌套及二维数组、函数、基础排序、结构体排序、基础语法复习",
-      "requirements": "12周岁及以上，C++编程零基础或基础薄弱的学生。目标是在暑假期间系统、高效地完成语法入门。",
-      "source": "用户提供大纲原图，2026-10-21整理",
+      "requirements": "12周岁及以上，C++语法学习中或基础薄弱的学生。目标是在暑假期间系统、高效地完成语法入门。",
+      "source": "用户提供暑假训练营大纲原图，2026-10-22逐项转录",
       "schedule": [
         {
           "day": 1,
@@ -1522,6 +1522,433 @@
           ]
         }
       ],
+      "reviewed": false,
+      "sourceCode": "XP01",
+      "teachingDays": 10,
+      "restDays": [],
+      "objectives": "系统学习初级算法，掌握基本的数据结构应用。",
+      "sourceVersion": "summer-2026-10-22",
+      "sourceDetails": {
+        "original_path": "C:/Users/du140/AppData/Local/Temp/codex-clipboard-f4a16d6e-8f3d-4735-b210-63d51bca1f59.png",
+        "archived_path": "data/camps/summer/sources/XP01-2026-10-22.png",
+        "format": "PNG",
+        "width": 800,
+        "height": 2883,
+        "sha256": "fb6099f4006807f66f0e87c9987ec1c05b7510c16b5196d1c21381740a6dfa14"
+      },
+      "sourceNotes": [
+        "第1—9天列出上午、下午、晚上三个时段；未标注每个时段时长。",
+        "第10天只列上午讲解课，下午和晚上未列出安排，不作补充。",
+        "复习已经包含在大纲内，不额外追加复习日。",
+        "本次原图学生群体为“C++语法学习中或基础薄弱”，与此前归档版本的“编程零基础”表述不同，以本次图为新资料依据。",
+        "课程目标原文提到初级算法和数据结构，不据此补入每日大纲未列出的内容。",
+        "课程目标中的奖项表述为原图目标，不是成绩承诺。"
+      ]
+    },
+    {
+      "code": "XP02",
+      "sourceCode": "XP02",
+      "name": "算法入门班",
+      "season": "summer",
+      "days": 10,
+      "teachingDays": 10,
+      "restDays": [],
+      "topic": "算法入门（模拟、枚举）、算法入门（贪心、前缀和、差分）、二分查找、二分答案、递推和递归、STL入门（栈、队列、vector）、树与图、深度优先搜索、广度优先搜索、算法综合复习",
+      "requirements": "已学习完C++语法，准备学习CSP-J入门组阶段的算法。",
+      "objectives": "深入核心基础算法，具备备战CSP-J入门组的实力。",
+      "source": "用户提供暑假训练营大纲原图，2026-10-22逐项转录",
+      "sourceVersion": "summer-2026-10-22",
+      "sourceDetails": {
+        "original_path": "C:/Users/du140/AppData/Local/Temp/codex-clipboard-4944b754-8af1-4282-9a34-e257e3f04e78.png",
+        "archived_path": "data/camps/summer/sources/XP02-2026-10-22.png",
+        "format": "PNG",
+        "width": 800,
+        "height": 2883,
+        "sha256": "512d5afcec6c4d2607ce48d6ef8a2c6d47ddebf409c747451f6750baa7af8aec"
+      },
+      "sourceNotes": [
+        "第1—9天列出上午、下午、晚上三个时段；未标注每个时段时长。",
+        "第10天只列上午讲解课，下午和晚上未列出安排，不作补充。",
+        "复习已经包含在大纲内，不额外追加复习日。",
+        "课程目标中的奖项表述为原图目标，不是成绩承诺。"
+      ],
+      "schedule": [
+        {
+          "day": 1,
+          "topic_verbatim": "算法入门（模拟、枚举）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "topic_verbatim": "算法入门（贪心、前缀和、差分）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "topic_verbatim": "二分查找",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "topic_verbatim": "二分答案",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "topic_verbatim": "递推和递归",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "topic_verbatim": "STL入门（栈、队列、vector）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "topic_verbatim": "树与图",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "topic_verbatim": "深度优先搜索",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "topic_verbatim": "广度优先搜索",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "topic_verbatim": "算法综合复习",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            }
+          ]
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "code": "XP03A",
+      "sourceCode": "XP03-A",
+      "name": "J组强化班",
+      "season": "summer",
+      "days": 10,
+      "teachingDays": 10,
+      "restDays": [],
+      "topic": "广度优先搜索、深度优先搜索、动态规划基础、初赛知识点讲解、CSP-J初赛模拟、CSP-J复赛模拟、入门组初赛技巧整合复习",
+      "requirements": "12周岁及以上，已经学习完CSP-J入门组阶段的算法，目标通过CSP-J组初赛",
+      "objectives": "巩固CSP-J组的核心算法，学习CSP-J组中的初赛高频考点，进行初赛真题及模拟题的训练",
+      "source": "用户提供暑假训练营大纲原图，2026-10-22逐项转录",
+      "sourceVersion": "summer-2026-10-22",
+      "sourceDetails": {
+        "original_path": "C:/Users/du140/AppData/Local/Temp/codex-clipboard-da29ff0f-ecb7-45a4-b7e3-68b8522f49c0.png",
+        "archived_path": "data/camps/summer/sources/XP03A-2026-10-22.png",
+        "format": "PNG",
+        "width": 800,
+        "height": 2883,
+        "sha256": "5aceb67c57231f3ebb989549ba127b4e87a19ae7b1bcfa403ac7485773de959b"
+      },
+      "sourceNotes": [
+        "第1—9天列出上午、下午、晚上三个时段；未标注每个时段时长。",
+        "第10天只列上午讲解课，下午和晚上未列出安排，不作补充。",
+        "复习已经包含在大纲内，不额外追加复习日。",
+        "课程目标中的奖项表述为原图目标，不是成绩承诺。"
+      ],
+      "schedule": [
+        {
+          "day": 1,
+          "topic_verbatim": "广度优先搜索",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "topic_verbatim": "深度优先搜索",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "topic_verbatim": "动态规划基础",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "topic_verbatim": "初赛知识点讲解",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "topic_verbatim": "初赛知识点讲解",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "topic_verbatim": "CSP-J初赛模拟",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "模拟赛"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "topic_verbatim": "CSP-J初赛模拟",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "模拟赛"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "topic_verbatim": "CSP-J初赛模拟",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "模拟赛"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "topic_verbatim": "CSP-J复赛模拟",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "topic_verbatim": "入门组初赛技巧整合复习",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            }
+          ]
+        }
+      ],
       "reviewed": false
     },
     {
@@ -1529,9 +1956,9 @@
       "name": "J组冲刺班",
       "season": "summer",
       "days": 10,
-      "topic": "前缀和与双指针、二分、搜索训练、动态规划、动态规划、CSP-J初赛模拟、CSP-J复赛模拟、CSP-J复赛模拟、CSP-J复赛模拟、入门组复赛技巧整合复习",
+      "topic": "前缀和与双指针、二分、搜索训练、动态规划、CSP-J初赛模拟、CSP-J复赛模拟、入门组复赛技巧整合复习",
       "requirements": "12周岁及以上，已经学习完CSP-J入门组阶段的算法，目标在CSP-J组复赛获得一等奖",
-      "source": "用户提供大纲原图，2026-10-21整理",
+      "source": "用户提供暑假训练营大纲原图，2026-10-22逐项转录",
       "schedule": [
         {
           "day": 1,
@@ -1702,6 +2129,827 @@
             {
               "period": "上午",
               "format": "讲解课"
+            }
+          ]
+        }
+      ],
+      "reviewed": false,
+      "sourceCode": "XP03-B",
+      "teachingDays": 10,
+      "restDays": [],
+      "objectives": "巩固CSP-J组中的复赛高频高点，进行复赛真题及模拟题的训练",
+      "sourceVersion": "summer-2026-10-22",
+      "sourceDetails": {
+        "original_path": "C:/Users/du140/AppData/Local/Temp/codex-clipboard-454310e3-ef5f-4499-8aa9-0d15278a38c6.png",
+        "archived_path": "data/camps/summer/sources/XP03B-2026-10-22.png",
+        "format": "PNG",
+        "width": 800,
+        "height": 2883,
+        "sha256": "de1378fca30518df204e8461721a1b7fbaaca87211a8702ceb525875de9e61eb"
+      },
+      "sourceNotes": [
+        "第1—9天列出上午、下午、晚上三个时段；未标注每个时段时长。",
+        "第10天只列上午讲解课，下午和晚上未列出安排，不作补充。",
+        "复习已经包含在大纲内，不额外追加复习日。",
+        "“复赛高频高点”按原图保留，不擅自改写。",
+        "课程目标中的奖项表述为原图目标，不是成绩承诺。"
+      ]
+    },
+    {
+      "code": "XP04",
+      "sourceCode": "XP04",
+      "name": "S组算法入门班",
+      "season": "summer",
+      "days": 10,
+      "teachingDays": 10,
+      "restDays": [],
+      "topic": "数据结构、搜索与基础算法、数据结构与数学、动态规划进阶、动态规划的优化、图论（一）、图论（二）、初赛模拟（一）、初赛模拟（二）、提高组初赛技巧整合复习",
+      "requirements": "12周岁以上学生，已熟练掌握C++入门组阶段算法，学习CSP-S提高组阶段算法",
+      "objectives": "系统学习提高组算法知识点，搭建提高组知识体系框架，冲击CSP-S二等奖",
+      "source": "用户提供暑假训练营大纲原图，2026-10-22逐项转录",
+      "sourceVersion": "summer-2026-10-22",
+      "sourceDetails": {
+        "original_path": "C:/Users/du140/AppData/Local/Temp/codex-clipboard-2361882c-d466-4485-b606-c63780758ea2.png",
+        "archived_path": "data/camps/summer/sources/XP04-2026-10-22.png",
+        "format": "PNG",
+        "width": 800,
+        "height": 2883,
+        "sha256": "1f35b91396c11fe347a1505bb4d41cb68d0a952d4021d6da90c0898d129cb5df"
+      },
+      "sourceNotes": [
+        "第1—9天列出上午、下午、晚上三个时段；未标注每个时段时长。",
+        "第10天只列上午讲解课，下午和晚上未列出安排，不作补充。",
+        "复习已经包含在大纲内，不额外追加复习日。",
+        "课程目标中的奖项表述为原图目标，不是成绩承诺。"
+      ],
+      "schedule": [
+        {
+          "day": 1,
+          "topic_verbatim": "数据结构",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "topic_verbatim": "搜索与基础算法",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "topic_verbatim": "数据结构与数学",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "模拟赛"
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "topic_verbatim": "动态规划进阶",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "topic_verbatim": "动态规划的优化",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "topic_verbatim": "图论（一）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "topic_verbatim": "图论（二）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "模拟赛"
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "topic_verbatim": "初赛模拟（一）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "复习课"
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "topic_verbatim": "初赛模拟（二）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "复习课"
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "topic_verbatim": "提高组初赛技巧整合复习",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            }
+          ]
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "code": "XP05",
+      "sourceCode": "XP05",
+      "name": "S组算法强化班",
+      "season": "summer",
+      "days": 10,
+      "teachingDays": 10,
+      "restDays": [],
+      "topic": "算法综合精讲（一）、算法综合精讲（二）、S组真题选讲（一）、S组真题选讲（二）、S组复赛模拟训练（一）、S组复赛模拟训练（二）、S组复赛模拟训练（三）、综合复习、S组复赛模拟训练（四）、提高组复赛技巧整合复习",
+      "requirements": "12周岁以上学生，已熟练掌握C++提高组阶段算法，强化应试能力与算法运用能力",
+      "objectives": "深入学习高级数据结构与复杂算法，冲击CSP-S一等奖",
+      "source": "用户提供暑假训练营大纲原图，2026-10-22逐项转录",
+      "sourceVersion": "summer-2026-10-22",
+      "sourceDetails": {
+        "original_path": "C:/Users/du140/AppData/Local/Temp/codex-clipboard-fb652438-b012-46b7-b767-13a7f67e82a2.png",
+        "archived_path": "data/camps/summer/sources/XP05-2026-10-22.png",
+        "format": "PNG",
+        "width": 800,
+        "height": 2883,
+        "sha256": "69b50fe7a800a2d83722f53f9e3be9ae3e61b117b71f904f79352fa4d37db8b2"
+      },
+      "sourceNotes": [
+        "第1—9天列出上午、下午、晚上三个时段；未标注每个时段时长。",
+        "第10天只列上午讲解课，下午和晚上未列出安排，不作补充。",
+        "复习已经包含在大纲内，不额外追加复习日。",
+        "课程目标中的奖项表述为原图目标，不是成绩承诺。"
+      ],
+      "schedule": [
+        {
+          "day": 1,
+          "topic_verbatim": "算法综合精讲（一）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "topic_verbatim": "算法综合精讲（二）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "topic_verbatim": "S组真题选讲（一）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "topic_verbatim": "S组真题选讲（二）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "topic_verbatim": "S组复赛模拟训练（一）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "讲解 + 模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "topic_verbatim": "S组复赛模拟训练（二）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "topic_verbatim": "S组复赛模拟训练（三）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "topic_verbatim": "综合复习",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "复习课"
+            },
+            {
+              "period": "晚上",
+              "format": "复习课"
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "topic_verbatim": "S组复赛模拟训练（四）",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            },
+            {
+              "period": "下午",
+              "format": "模拟赛"
+            },
+            {
+              "period": "晚上",
+              "format": "讲解课"
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "topic_verbatim": "提高组复赛技巧整合复习",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "讲解课"
+            }
+          ]
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "code": "NOIP",
+      "sourceCode": "NOIP",
+      "name": "算法强化班",
+      "season": "summer",
+      "days": 20,
+      "teachingDays": 18,
+      "restDays": [
+        7,
+        14
+      ],
+      "topic": "基础算法专题、模拟赛1、数据结构#1、模拟赛2、数据结构#2、模拟赛3、组合计数、模拟赛4、动态规划#1、模拟赛5、动态规划#2、模拟赛6、图论#1、模拟赛7、图论#2、模拟赛8、数论与字符串、模拟赛9",
+      "requirements": "已熟练掌握提高组算法，了解部分NOIP阶段算法，需要进一步强化代码能力的选手",
+      "objectives": "专题选讲与大量模拟赛结合，提升学员代码运用能力，目标NOIP一等高分",
+      "source": "用户提供暑假训练营大纲原图，2026-10-22逐项转录",
+      "sourceVersion": "summer-2026-10-22",
+      "sourceDetails": {
+        "original_path": "C:/Users/du140/AppData/Local/Temp/codex-clipboard-f66a9a49-221b-4d85-ad0d-2d8940927107.png",
+        "archived_path": "data/camps/summer/sources/NOIP-2026-10-22.png",
+        "format": "PNG",
+        "width": 800,
+        "height": 3390,
+        "sha256": "85305d1d6ddee5dc2f96d572f50a6185711726f4272c8adc09c28b48a3eaf2be"
+      },
+      "sourceNotes": [
+        "20天大纲包含第7、14天休息，共18个有课程安排的日程日；不压缩休息日。",
+        "原图未标注每个时段时长，不换算为常规课课次。",
+        "课程目标中的奖项表述为原图目标，不是成绩承诺。"
+      ],
+      "schedule": [
+        {
+          "day": 1,
+          "topic_verbatim": "基础算法专题",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "基础算法专题"
+            },
+            {
+              "period": "下午",
+              "format": "基础算法专题"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "topic_verbatim": "模拟赛1",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "模拟赛1"
+            },
+            {
+              "period": "下午",
+              "format": "试题与拓展题目讲解"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "topic_verbatim": "数据结构#1",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "数据结构#1"
+            },
+            {
+              "period": "下午",
+              "format": "数据结构#1"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "topic_verbatim": "模拟赛2",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "模拟赛2"
+            },
+            {
+              "period": "下午",
+              "format": "试题与拓展题目讲解"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "topic_verbatim": "数据结构#2",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "数据结构#2"
+            },
+            {
+              "period": "下午",
+              "format": "数据结构#2"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "topic_verbatim": "模拟赛3",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "模拟赛3"
+            },
+            {
+              "period": "下午",
+              "format": "试题与拓展题目讲解"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "topic_verbatim": "休息",
+          "day_type": "rest",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "休息"
+            },
+            {
+              "period": "下午",
+              "format": "休息"
+            },
+            {
+              "period": "晚上",
+              "format": "休息"
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "topic_verbatim": "组合计数",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "组合计数"
+            },
+            {
+              "period": "下午",
+              "format": "组合计数"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "topic_verbatim": "模拟赛4",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "模拟赛4"
+            },
+            {
+              "period": "下午",
+              "format": "试题与拓展题目讲解"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "topic_verbatim": "动态规划#1",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "动态规划#1"
+            },
+            {
+              "period": "下午",
+              "format": "动态规划#1"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "topic_verbatim": "模拟赛5",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "模拟赛5"
+            },
+            {
+              "period": "下午",
+              "format": "试题与拓展题目讲解"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "topic_verbatim": "动态规划#2",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "动态规划#2"
+            },
+            {
+              "period": "下午",
+              "format": "动态规划#2"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 13,
+          "topic_verbatim": "模拟赛6",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "模拟赛6"
+            },
+            {
+              "period": "下午",
+              "format": "试题与拓展题目讲解"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 14,
+          "topic_verbatim": "休息",
+          "day_type": "rest",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "休息"
+            },
+            {
+              "period": "下午",
+              "format": "休息"
+            },
+            {
+              "period": "晚上",
+              "format": "休息"
+            }
+          ]
+        },
+        {
+          "day": 15,
+          "topic_verbatim": "图论#1",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "图论#1"
+            },
+            {
+              "period": "下午",
+              "format": "图论#1"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 16,
+          "topic_verbatim": "模拟赛7",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "模拟赛7"
+            },
+            {
+              "period": "下午",
+              "format": "试题与拓展题目讲解"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 17,
+          "topic_verbatim": "图论#2",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "图论#2"
+            },
+            {
+              "period": "下午",
+              "format": "图论#2"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 18,
+          "topic_verbatim": "模拟赛8",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "模拟赛8"
+            },
+            {
+              "period": "下午",
+              "format": "试题与拓展题目讲解"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 19,
+          "topic_verbatim": "数论与字符串",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "数论与字符串"
+            },
+            {
+              "period": "下午",
+              "format": "数论与字符串"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
+            }
+          ]
+        },
+        {
+          "day": 20,
+          "topic_verbatim": "模拟赛9",
+          "sessions": [
+            {
+              "period": "上午",
+              "format": "模拟赛9"
+            },
+            {
+              "period": "下午",
+              "format": "试题与拓展题目讲解"
+            },
+            {
+              "period": "晚上",
+              "format": "练习与答疑"
             }
           ]
         }
@@ -3106,5 +4354,6 @@
         "checkedAt": "2026-10-22"
       }
     ]
-  }
+  },
+  "summerCatalogVersion": "summer-2026-10-22"
 }

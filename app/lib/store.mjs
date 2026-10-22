@@ -2,6 +2,7 @@ import {DatabaseSync} from 'node:sqlite';
 import {mkdirSync,readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join} from 'node:path';
 import {randomUUID,scryptSync,randomBytes,timingSafeEqual,createHash} from 'node:crypto';
+import {mergeSummerCatalog} from './camp-catalog.mjs';
 export const uid=()=>randomUUID();
 export const hashToken=s=>createHash('sha256').update(s).digest('hex');
 export function hashPassword(value){const salt=randomBytes(16).toString('hex');return salt+':'+scryptSync(value,salt,64).toString('hex')}
@@ -12,5 +13,7 @@ export function openStore(dir){
  if(!store.get('library','main'))store.put('library','main',JSON.parse(readFileSync(new URL('../seed/library.json',import.meta.url),'utf8')));
  const library=store.get('library','main');
  if(!library.gesp){mkdirSync(join(dir,'backups'),{recursive:true});const backup=join(dir,'backups','library-before-multi-exam.json');if(!existsSync(backup))writeFileSync(backup,JSON.stringify(library,null,2),{flag:'wx'});library.gesp=JSON.parse(readFileSync(new URL('../../data/standards/gesp/course-mapping.json',import.meta.url),'utf8'));store.put('library','main',library);}
+ const summer=mergeSummerCatalog(library);
+ if(summer.changed){mkdirSync(join(dir,'backups'),{recursive:true});const backup=join(dir,'backups','library-before-summer-2026-10-22.json');if(!existsSync(backup))writeFileSync(backup,JSON.stringify(library,null,2),{flag:'wx'});store.put('library','main',summer.library);}
  return store;
 }
