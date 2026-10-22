@@ -1,0 +1,6 @@
+.data/
+.test-work/
+.qa-data/
+*.log
+.env*
+output/

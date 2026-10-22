@@ -1,0 +1,20 @@
+// Build an illustrative PDF without accessing any teacher's real database or API.
+import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
+import {resolve,join} from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {buildBaseline,applyExamAdjustments} from '../lib/planning.mjs';
+import {buildParentReport} from '../public/report.js';
+const library=JSON.parse(readFileSync(new URL('../seed/library.json',import.meta.url),'utf8'));
+const student={name:'示例学员',grade:'六年级',schoolYear:'2026-2027',unit:5,lesson:6,personalProgress:true,passed:'GESP 2级',mastery:'待评估',attended:['XP01']};
+const cls={name:'AC进阶班',weekday:6,unit:5,lesson:6,recommendationVersion:'4.5',curriculum:library.name};
+const baseline=buildBaseline(student,cls,{start:'2026-10-24',end:'2027-12-31',goal:'GESP 3级',targetMonth:'',winter:'none',winterDays:10,summer:'none',summerDays:10},library);
+const exam=baseline.rows.find(r=>r.exam?.level===3);
+const adjusted=applyExamAdjustments(baseline.rows,{[exam.id]:{month:'2027-03',reason:'巩固独立解题能力，完成专题练习后再参加。'}},baseline.conditions,library);
+const teacherPlan=buildBaseline(student,cls,baseline.conditions,library,[],adjusted.filter(r=>r.edited));
+const plan={...teacherPlan,studentSnapshot:{...student,className:cls.name,curriculum:cls.curriculum},librarySnapshot:library,source:'AI规划',ai:{model:'DO_NOT_EXPORT'},updatedBy:'示例老师',updatedAt:'2026-10-22'};
+const python=join(process.env.USERPROFILE,'.cache','codex-runtimes','codex-primary-runtime','dependencies','python','python.exe');
+const out=resolve('../output/pdf');mkdirSync(out,{recursive:true});
+const result=spawnSync(python,['lib/export_pdf.py'],{input:JSON.stringify(buildParentReport(plan)),maxBuffer:20_000_000,windowsHide:true});
+if(result.status!==0)throw Error(result.stderr.toString());
+writeFileSync(join(out,'家长版学习规划书-连续分页示例.pdf'),result.stdout);
+console.log('Parent report preview generated.');

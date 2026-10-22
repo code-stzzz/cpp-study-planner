@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "code": "D03",
+  "source_code": "D03",
+  "name": "竞赛算法提分营",
+  "subtitle_verbatim": "DFS、BFS及图搜索",
+  "season": "winter",
+  "season_basis": "用户确认：D开头的是冬季寒假训练营",
+  "duration_days": 10,
+  "year": null,
+  "edition": null,
+  "start_date": null,
+  "end_date": null,
+  "collection": {
+    "date": "2026-10-22",
+    "status": "collected",
+    "method": "用户截图人工逐项转录并对照原图检查",
+    "teacher_review_status": "not_recorded"
+  },
+  "source": {
+    "type": "user_supplied_screenshot",
+    "url": "https://student-web.xiaomawang.com/camp_plan/camp_plan.html",
+    "image": "sources/D01-D05-10日大纲.png",
+    "heading_verbatim": "五级课程路线与10日大纲"
+  },
+  "audience_verbatim": null,
+  "objectives_verbatim": null,
+  "source_requirements": {
+    "prior_knowledge_verbatim": null,
+    "minimum_age_years": null,
+    "note": "截图未注明入营门槛，课程推荐条件与教师测评另行核对"
+  },
+  "schedule": [
+    {
+      "day": 1,
+      "topic_verbatim": "DFS—枚举",
+      "content_verbatim": "使用深搜解决DFS枚举问题；下午复赛模拟赛及讲解。",
+      "sessions": [
+        {
+          "period": "下午",
+          "format": "复赛模拟赛及讲解"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "topic_verbatim": "DFS—Meet in the Middle",
+      "content_verbatim": "使用深搜解决Meet in the Middle问题；下午复赛模拟赛及讲解。",
+      "sessions": [
+        {
+          "period": "下午",
+          "format": "复赛模拟赛及讲解"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "topic_verbatim": "连通块专题",
+      "content_verbatim": "连通块概念及使用DFS解决连通块问题；下午复赛模拟赛及讲解。",
+      "sessions": [
+        {
+          "period": "下午",
+          "format": "复赛模拟赛及讲解"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "topic_verbatim": "BFS—最小步数",
+      "content_verbatim": "使用广搜解决隐式图最短路；下午复赛模拟赛及讲解。",
+      "sessions": [
+        {
+          "period": "下午",
+          "format": "复赛模拟赛及讲解"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "topic_verbatim": "BFS—迷宫",
+      "content_verbatim": "使用广搜解决迷宫最短路；下午复赛模拟赛及讲解。",
+      "sessions": [
+        {
+          "period": "下午",
+          "format": "复赛模拟赛及讲解"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "topic_verbatim": "树的遍历与深度",
+      "content_verbatim": "树的存储及树的深度；下午复赛模拟赛及讲解。",
+      "sessions": [
+        {
+          "period": "下午",
+          "format": "复赛模拟赛及讲解"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "topic_verbatim": "树的遍历与子树",
+      "content_verbatim": "树的遍历及子树问题；下午复赛模拟赛及讲解。",
+      "sessions": [
+        {
+          "period": "下午",
+          "format": "复赛模拟赛及讲解"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "topic_verbatim": "BFS—拓扑排序",
+      "content_verbatim": "拓扑排序概念及使用BFS实现；下午复赛模拟赛及讲解。",
+      "sessions": [
+        {
+          "period": "下午",
+          "format": "复赛模拟赛及讲解"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "topic_verbatim": "DFS—无向图找环",
+      "content_verbatim": "无向图中的环及使用DFS找环；下午复赛模拟赛及讲解。",
+      "sessions": [
+        {
+          "period": "下午",
+          "format": "复赛模拟赛及讲解"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "topic_verbatim": "深广搜综合",
+      "content_verbatim": "DFS、BFS综合训练；复赛模拟赛及讲解。",
+      "sessions": [
+        {
+          "period": "未注明时段",
+          "format": "复赛模拟赛及讲解"
+        }
+      ]
+    }
+  ],
+  "scope_notes": [
+    "逐日主题和教学内容按用户截图转录，不按此前规划书中的示例推定。",
+    "截图未注明适用年份、开营日期、每天课时、具体题单、量化结营标准和入营门槛。",
+    "D01至D05的进阶顺序不等于已确认的20天或30天连续报营组合。",
+    "复赛测试、复赛训练和复赛模拟赛是大纲中的教学活动，不代表已报名或获得官方比赛资格。"
+  ]
+}

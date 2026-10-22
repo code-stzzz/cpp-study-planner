@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "code": "D04",
+  "source_code": "D04",
+  "name": "提高算法营",
+  "subtitle_verbatim": "搜索、图论、数据结构、动态规划",
+  "season": "winter",
+  "season_basis": "用户确认：D开头的是冬季寒假训练营",
+  "duration_days": 10,
+  "year": null,
+  "edition": null,
+  "start_date": null,
+  "end_date": null,
+  "collection": {
+    "date": "2026-10-22",
+    "status": "collected",
+    "method": "用户截图人工逐项转录并对照原图检查",
+    "teacher_review_status": "not_recorded"
+  },
+  "source": {
+    "type": "user_supplied_screenshot",
+    "url": "https://student-web.xiaomawang.com/camp_plan/camp_plan.html",
+    "image": "sources/D01-D05-10日大纲.png",
+    "heading_verbatim": "五级课程路线与10日大纲"
+  },
+  "audience_verbatim": null,
+  "objectives_verbatim": null,
+  "source_requirements": {
+    "prior_knowledge_verbatim": null,
+    "minimum_age_years": null,
+    "note": "截图未注明入营门槛，课程推荐条件与教师测评另行核对"
+  },
+  "schedule": [
+    {
+      "day": 1,
+      "topic_verbatim": "深搜综合应用",
+      "content_verbatim": "DFS枚举、Meet in the Middle、连通块。",
+      "sessions": []
+    },
+    {
+      "day": 2,
+      "topic_verbatim": "广搜综合应用",
+      "content_verbatim": "隐式图最短路、连通块。",
+      "sessions": []
+    },
+    {
+      "day": 3,
+      "topic_verbatim": "最短路算法1",
+      "content_verbatim": "Dijkstra算法及应用。",
+      "sessions": []
+    },
+    {
+      "day": 4,
+      "topic_verbatim": "最短路算法2",
+      "content_verbatim": "SPFA算法及简单应用。",
+      "sessions": []
+    },
+    {
+      "day": 5,
+      "topic_verbatim": "最小生成树",
+      "content_verbatim": "概念及常见最小生成树算法。",
+      "sessions": []
+    },
+    {
+      "day": 6,
+      "topic_verbatim": "ST表",
+      "content_verbatim": "ST表及其应用。",
+      "sessions": []
+    },
+    {
+      "day": 7,
+      "topic_verbatim": "树状数组",
+      "content_verbatim": "概念、构建及简单应用。",
+      "sessions": []
+    },
+    {
+      "day": 8,
+      "topic_verbatim": "状压DP",
+      "content_verbatim": "回顾动态规划，讲解经典状压DP。",
+      "sessions": []
+    },
+    {
+      "day": 9,
+      "topic_verbatim": "树上DP",
+      "content_verbatim": "树上的动态规划问题。",
+      "sessions": []
+    },
+    {
+      "day": 10,
+      "topic_verbatim": "综合复习",
+      "content_verbatim": "搜索、图论、DP综合训练及复赛模拟赛。",
+      "sessions": []
+    }
+  ],
+  "scope_notes": [
+    "逐日主题和教学内容按用户截图转录，不按此前规划书中的示例推定。",
+    "截图未注明适用年份、开营日期、每天课时、具体题单、量化结营标准和入营门槛。",
+    "D01至D05的进阶顺序不等于已确认的20天或30天连续报营组合。",
+    "复赛测试、复赛训练和复赛模拟赛是大纲中的教学活动，不代表已报名或获得官方比赛资格。"
+  ]
+}

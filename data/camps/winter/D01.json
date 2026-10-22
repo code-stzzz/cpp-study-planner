@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "code": "D01",
+  "source_code": "D01",
+  "name": "寒假语法训练营",
+  "subtitle_verbatim": "C++基础语法与综合应用",
+  "season": "winter",
+  "season_basis": "用户确认：D开头的是冬季寒假训练营",
+  "duration_days": 10,
+  "year": null,
+  "edition": null,
+  "start_date": null,
+  "end_date": null,
+  "collection": {
+    "date": "2026-10-22",
+    "status": "collected",
+    "method": "用户截图人工逐项转录并对照原图检查",
+    "teacher_review_status": "not_recorded"
+  },
+  "source": {
+    "type": "user_supplied_screenshot",
+    "url": "https://student-web.xiaomawang.com/camp_plan/camp_plan.html",
+    "image": "sources/D01-D05-10日大纲.png",
+    "heading_verbatim": "五级课程路线与10日大纲"
+  },
+  "audience_verbatim": null,
+  "objectives_verbatim": null,
+  "source_requirements": {
+    "prior_knowledge_verbatim": null,
+    "minimum_age_years": null,
+    "note": "截图未注明入营门槛，课程推荐条件与教师测评另行核对"
+  },
+  "schedule": [
+    {
+      "day": 1,
+      "topic_verbatim": "输入输出、分支",
+      "content_verbatim": "输入输出、变量、算术运算和分支语句；复赛测试及讲解。",
+      "sessions": [
+        {
+          "period": "未注明时段",
+          "format": "复赛测试及讲解"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "topic_verbatim": "循环结构",
+      "content_verbatim": "for、while循环的执行过程及简单应用；复赛测试及讲解。",
+      "sessions": [
+        {
+          "period": "未注明时段",
+          "format": "复赛测试及讲解"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "topic_verbatim": "数组",
+      "content_verbatim": "数组概念、输入输出及应用；复赛测试及讲解。",
+      "sessions": [
+        {
+          "period": "未注明时段",
+          "format": "复赛测试及讲解"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "topic_verbatim": "字符串",
+      "content_verbatim": "字符串输入输出、遍历及应用；复赛测试及讲解。",
+      "sessions": [
+        {
+          "period": "未注明时段",
+          "format": "复赛测试及讲解"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "topic_verbatim": "循环嵌套",
+      "content_verbatim": "循环嵌套执行过程及简单应用；复赛测试及讲解。",
+      "sessions": [
+        {
+          "period": "未注明时段",
+          "format": "复赛测试及讲解"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "topic_verbatim": "枚举、数位",
+      "content_verbatim": "数位与枚举概念，使用循环嵌套枚举数位；复赛测试及讲解。",
+      "sessions": [
+        {
+          "period": "未注明时段",
+          "format": "复赛测试及讲解"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "topic_verbatim": "函数、因子",
+      "content_verbatim": "函数、因子的概念及函数简单应用；复赛测试及讲解。",
+      "sessions": [
+        {
+          "period": "未注明时段",
+          "format": "复赛测试及讲解"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "topic_verbatim": "sort排序",
+      "content_verbatim": "排序概念、sort函数使用技巧及应用；复赛测试及讲解。",
+      "sessions": [
+        {
+          "period": "未注明时段",
+          "format": "复赛测试及讲解"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "topic_verbatim": "结构体排序",
+      "content_verbatim": "结构体概念，使用sort实现结构体排序；复赛测试及讲解。",
+      "sessions": [
+        {
+          "period": "未注明时段",
+          "format": "复赛测试及讲解"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "topic_verbatim": "语法综合应用",
+      "content_verbatim": "分支、数组、循环、排序等综合训练；复赛测试及讲解。",
+      "sessions": [
+        {
+          "period": "未注明时段",
+          "format": "复赛测试及讲解"
+        }
+      ]
+    }
+  ],
+  "scope_notes": [
+    "逐日主题和教学内容按用户截图转录，不按此前规划书中的示例推定。",
+    "截图未注明适用年份、开营日期、每天课时、具体题单、量化结营标准和入营门槛。",
+    "D01至D05的进阶顺序不等于已确认的20天或30天连续报营组合。",
+    "复赛测试、复赛训练和复赛模拟赛是大纲中的教学活动，不代表已报名或获得官方比赛资格。"
+  ]
+}
