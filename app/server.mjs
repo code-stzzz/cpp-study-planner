@@ -5,10 +5,11 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 import {spawn} from 'node:child_process';
 import {openStore,uid,checkPassword,hashToken} from './lib/store.mjs';
 import {secretBox,publicConfig,prepareConfig,testConnection,generateAI} from './lib/ai.mjs';
-import {fail,text,buildBaseline,checkProgress,validateRows,progress,mergeLockedRows,applyExamAdjustments,validateExamPins,remapPhaseEdits} from './lib/planning.mjs';
+import {fail,text,buildBaseline,checkProgress,validateRows,progress,mergeLockedRows,applyExamAdjustments,validateExamPins,remapPhaseEdits,normalizeConditions,reconcileSummerLocks} from './lib/planning.mjs';
 import {gespLevel,goalName} from './public/gesp.js';
 import {buildParentReport,buildGuidance,validateGuidance,validatePhaseEdits} from './public/report.js';
 import {validateSessions} from './public/gesp.js';
+import {planningStatuses} from './lib/planning-status.mjs';
 const root=dirname(fileURLToPath(import.meta.url));
 const json=(res,status,data)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(data))};
 async function body(req){let size=0;const chunks=[];for await(const chunk of req){size+=chunk.length;if(size>1_000_000)fail('请求内容过大',413);chunks.push(chunk)}try{return JSON.parse(Buffer.concat(chunks).toString('utf8')||'{}')}catch{fail('请求格式错误')}}
@@ -36,7 +37,7 @@ export function createApp({dataDir=resolve(root,'.data'),port=4317}={}){
    const url=new URL(req.url,'http://'+req.headers.host),path=url.pathname;
    if(!path.startsWith('/api/')){
     if(req.method!=='GET')fail('方法不支持',405);
-    const assets={'/':'index.html','/app.js':'app.js','/report.js':'report.js','/phase-ui.js':'phase-ui.js','/outcomes.js':'outcomes.js','/gesp.js':'gesp.js','/exam-ui.js':'exam-ui.js','/app.css':'app.css','/favicon.svg':'favicon.svg'};const name=assets[path];if(!name)fail('页面不存在',404);
+    const assets={'/':'index.html','/app.js':'app.js','/planning-status-ui.js':'planning-status-ui.js','/summer-camps.js':'summer-camps.js','/summer-ui.js':'summer-ui.js','/report.js':'report.js','/phase-ui.js':'phase-ui.js','/outcomes.js':'outcomes.js','/gesp.js':'gesp.js','/exam-ui.js':'exam-ui.js','/app.css':'app.css','/favicon.svg':'favicon.svg'};const name=assets[path];if(!name)fail('页面不存在',404);
     res.setHeader('Content-Type',name.endsWith('.js')?'text/javascript; charset=utf-8':name.endsWith('.css')?'text/css; charset=utf-8':name.endsWith('.svg')?'image/svg+xml':'text/html; charset=utf-8');res.setHeader('Cache-Control','no-cache');res.end(readFileSync(join(root,'public',name)));return;
    }
    if(!['GET','HEAD'].includes(req.method)&&req.headers.origin!=='http://'+req.headers.host)fail('请求来源校验失败，请从本机网页操作',403);
@@ -54,7 +55,7 @@ export function createApp({dataDir=resolve(root,'.data'),port=4317}={}){
    if(path==='/api/logout'&&req.method==='POST'){store.db.prepare('DELETE FROM sessions WHERE token=?').run(hashToken(cookie));res.setHeader('Set-Cookie','planner_session=; HttpOnly; SameSite=Strict; Path=/; Max-Age=0');json(res,200,{ok:true});return}
    if(path==='/api/data'&&req.method==='GET'){
     const classes=store.list('classes').filter(c=>canClass(user,c)),students=store.list('students').filter(s=>classes.some(c=>c.id===s.classId)),plans=store.list('plans').filter(p=>students.some(s=>s.id===p.studentId)).map(({rows,calendar,advice,librarySnapshot,...p})=>({...p,rowCount:rows.length}));
-    json(res,200,{user,classes,students,plans,users:user.role==='admin'?store.users():[user],library:getLibrary(),ai:publicConfig(store.get('settings','ai'))});return;
+    json(res,200,{user,classes,students,plans,planningStatuses:planningStatuses(students,plans,store.list('versions')),users:user.role==='admin'?store.users():[user],library:getLibrary(),ai:publicConfig(store.get('settings','ai'))});return;
    }
    if(path==='/api/users'&&req.method==='POST'){requireAdmin(user);const b=await body(req);if(store.users().some(u=>u.username===text(b.username,40)))fail('账号已存在',409);const u=store.createUser({...credentials(b),role:'teacher'});json(res,201,u);return}
    if(path==='/api/settings/ai'&&req.method==='PUT'){requireAdmin(user);const cfg=prepareConfig(await body(req),store.get('settings','ai'),box);store.put('settings','ai',cfg);json(res,200,publicConfig(cfg));return}
@@ -86,13 +87,15 @@ export function createApp({dataDir=resolve(root,'.data'),port=4317}={}){
    if(path==='/api/plans/build'&&req.method==='POST'){
     const b=await body(req),student=studentFor(user,b.studentId),cls=store.get('classes',student.classId),library=getLibrary(),old=b.planId?planFor(user,b.planId):null;
     if(old&&old.studentId!==student.id)fail('不能将已有规划用于其他学生');
-    const base=buildBaseline(student,cls,b.conditions||{},library,old?.excludedExams||[],(old?.rows||[]).filter(r=>r.edited));
+    const conditions=normalizeConditions(b.conditions||{},library),locked=reconcileSummerLocks((old?.rows||[]).filter(r=>r.edited),conditions,old?.conditions||conditions,library);
+    const base=buildBaseline(student,cls,conditions,library,old?.excludedExams||[],locked);
     if(old&&b.revision!==old.revision)fail('规划已被其他老师修改，请重新打开',409);
-    const locked=(old?.rows||[]).filter(r=>r.edited);if(locked.some(r=>r.start<base.conditions.start||r.end>base.conditions.end))fail('已修改阶段超出新周期，请先调整这些阶段或新建规划',409);
+    if(locked.some(r=>r.start<base.conditions.start||r.end>base.conditions.end))fail('已修改阶段超出新周期，请先调整这些阶段或新建规划',409);
     let generated=null;if(b.mode==='ai'){if(pending.has(user.id))fail('当前已有AI规划正在生成',409);pending.add(user.id);try{generated=await generateAI(store.get('settings','ai'),box,base,student)}finally{pending.delete(user.id)}}
     if(old&&store.get('plans',old.id)?.revision!==old.revision)fail('生成期间规划已被修改，未覆盖当前内容，请重新生成',409);
     const incoming=generated?.rows||base.rows;const rows=mergeLockedRows(incoming,locked.filter(r=>!gespLevel(goalName(r))||gespLevel(goalName(r))>gespLevel(student.passed)));
     const id=old?.id||uid(),now=new Date().toISOString();const p={id,studentId:student.id,studentSnapshot:{...student,...base.progress,className:cls.name,curriculum:cls.curriculum},...base,rows:validateRows(rows,base.conditions),advice:old?.adviceEdited?old.advice:generated?.advice||base.advice,adviceEdited:!!old?.adviceEdited,guidance:old?.guidanceEdited?old.guidance:generated?.guidance||buildGuidance({...base,librarySnapshot:library}),guidanceEdited:!!old?.guidanceEdited,phaseEdits:validatePhaseEdits(remapPhaseEdits(old?.phaseEdits,old?.rows||[],rows),rows),source:generated?'AI规划':'规则排课草稿',ai:generated?{model:generated.model,generatedAt:generated.generatedAt}:null,revision:(old?.revision||0)+1,createdAt:old?.createdAt||now,updatedAt:now,updatedBy:user.name,librarySnapshot:library};
+    if(generated)p.ai.generation=generated.generation;
     p.needsRematch=false;if(locked.length)p.warnings.push('已保留老师修改的阶段，请核对其与本次目标和条件的一致性');store.put('plans',id,p);json(res,200,p);return;
    }
    const match=path.match(/^\/api\/plans\/([\w-]+)(?:\/(versions|pdf))?$/);

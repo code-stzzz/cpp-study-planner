@@ -110,7 +110,7 @@ export function buildPhases(plan) {
       if(!phase.days.length)phase.notes.push('本版本尚未收录逐日大纲，请老师确认后补充；不据此推定每日内容。');
       if(!camp?.reviewed)phase.notes.push('入营基础与参加安排需结合学生情况由老师确认。');
       if(camp?.restDays?.length)phase.notes.push(`本营${camp.days}天日程含第${camp.restDays.join('、')}天休息，共${camp.teachingDays}天有课程安排；休息日保留，不额外推进常规课。`);
-      if(plan.conditions?.[row.id+'Status']==='推荐方案')phase.notes.push('当前为拟安排方案，参加情况待确认。');
+      if((row.campStatus||plan.conditions?.[row.id+'Status'])==='推荐方案')phase.notes.push('当前为拟安排方案，参加情况待确认。');
       phase.notes.push(...warnings.filter(w=>code&&w.includes(code)&&!/大纲与入营条件/.test(w)));
     }else if(row.kind==='goal'){
       const goalName=(row.sourceIds||[]).find(x=>x.startsWith('goal:'))?.slice(5)||plan.conditions?.goal;
